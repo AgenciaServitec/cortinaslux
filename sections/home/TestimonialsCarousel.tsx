@@ -12,7 +12,6 @@ export const TestimonialsCarousel = () => {
     const scroll = (direction: "left" | "right") => {
         if (scrollRef.current) {
             const { current } = scrollRef;
-            // Desplaza el ancho visible del contenedor para mostrar las siguientes tarjetas
             const scrollAmount = current.clientWidth;
             current.scrollBy({
                 left: direction === "left" ? -scrollAmount : scrollAmount,
@@ -27,8 +26,8 @@ export const TestimonialsCarousel = () => {
             name: "Nadeisda Passalacqua",
             location: "Chorrillos | Urb. Brisas de Villa",
             rating: 5,
-            review: "Los encontramos a través de su página web sin ninguna recomendación. Sin embargo, la experiencia fue excelente de principio a fin. Cada proceso se cumplió dentro de los plazos establecidos, el servicio y materiales son de excelente calidad y definitivamente tomaría el servicio en cuenta para ambientar otros espacios de nuestra casa.",
-            avatar: "/testimonials/avatar1.webp",
+            review: "Los encontramos a través de su página web sin ninguna recomendación. Sin embargo, la experiencia fue excelente de principio a fin. Cada proceso se cumplió dentro de los plazos establecidos...",
+            avatar: "https://randomuser.me/api/portraits/women/44.jpg",
         },
         {
             id: 2,
@@ -36,15 +35,15 @@ export const TestimonialsCarousel = () => {
             location: "Lomas de La Molina vieja",
             rating: 5,
             review: "¡Excelente servicio, atención, instalación y calidad! Los recomiendo.",
-            avatar: "/testimonials/avatar2.webp",
+            avatar: "https://randomuser.me/api/portraits/women/68.jpg",
         },
         {
             id: 3,
             name: "Milan Prica",
             location: "Miraflores",
             rating: 5,
-            review: "Muy Feliz por el trabajo. Contrate sus servicios sin ninguna recomendación solo viendo su página web y me voy muy feliz con el trabajo y la atención. En verdad trabaja 24h por WhatsApp, vino a mi casa a hacer las medidas el día y a la hora acordada, entregó el trabajo el día pactado.",
-            avatar: "/testimonials/avatar3.webp",
+            review: "Muy Feliz por el trabajo. Contrate sus servicios sin ninguna recomendación solo viendo su página web y me voy muy feliz con el trabajo y la atención...",
+            avatar: "https://randomuser.me/api/portraits/men/32.jpg",
         },
         {
             id: 4,
@@ -52,7 +51,7 @@ export const TestimonialsCarousel = () => {
             location: "Santiago de Surco",
             rating: 5,
             review: "Impecable. Desde la primera visita para mostrar el catálogo hasta la instalación de las cortinas motorizadas. El equipo es muy profesional y dejaron todo completamente limpio. 100% recomendados.",
-            avatar: "/testimonials/avatar4.webp",
+            avatar: "https://randomuser.me/api/portraits/men/45.jpg",
         },
         {
             id: 5,
@@ -60,7 +59,7 @@ export const TestimonialsCarousel = () => {
             location: "San Isidro",
             rating: 4,
             review: "Muy buena variedad de telas y los acabados son de primera. Las persianas de madera le dieron un toque súper elegante a mi oficina. Definitivamente volveré a contactarlos para mi sala.",
-            avatar: "/testimonials/avatar5.webp",
+            avatar: "https://randomuser.me/api/portraits/women/33.jpg",
         },
         {
             id: 6,
@@ -68,7 +67,7 @@ export const TestimonialsCarousel = () => {
             location: "Jesús María",
             rating: 5,
             review: "Excelente relación calidad-precio. Me ayudaron a elegir el toldo perfecto para mi terraza y resiste muy bien el sol. La instalación fue rápida y el trato muy cordial.",
-            avatar: "/testimonials/avatar6.webp",
+            avatar: "https://randomuser.me/api/portraits/men/22.jpg",
         },
         {
             id: 7,
@@ -76,7 +75,7 @@ export const TestimonialsCarousel = () => {
             location: "San Borja",
             rating: 5,
             review: "Compré unos rollers blackout para el cuarto de mis hijos y cumplen perfectamente su función. Cero luz en las mañanas. Además, la atención por WhatsApp fue muy paciente para resolver todas mis dudas.",
-            avatar: "/testimonials/avatar7.webp",
+            avatar: "https://randomuser.me/api/portraits/women/12.jpg",
         },
         {
             id: 8,
@@ -84,7 +83,7 @@ export const TestimonialsCarousel = () => {
             location: "Magdalena del Mar",
             rating: 5,
             review: "Profesionalismo total. Me cotizaron un viernes y el miércoles ya estaban instalando. Los acabados del riel son muy discretos y elegantes. Gran trabajo de todo el equipo de Cortinas LUX.",
-            avatar: "/testimonials/avatar8.webp",
+            avatar: "https://randomuser.me/api/portraits/men/11.jpg",
         },
         {
             id: 9,
@@ -92,7 +91,7 @@ export const TestimonialsCarousel = () => {
             location: "Pueblo Libre",
             rating: 4,
             review: "Quedé encantada con el panel japonés que instalaron para dividir mi sala del comedor. Le da un toque muy moderno a la casa. El material se nota que es duradero.",
-            avatar: "/testimonials/avatar9.webp",
+            avatar: "https://randomuser.me/api/portraits/women/25.jpg",
         },
         {
             id: 10,
@@ -100,10 +99,9 @@ export const TestimonialsCarousel = () => {
             location: "La Victoria",
             rating: 5,
             review: "Son unos verdaderos expertos en lo que hacen. Cambié todas las persianas antiguas de mi empresa por estores nuevos y el ambiente cambió por completo. Facturación transparente y muy puntuales.",
-            avatar: "/testimonials/avatar10.webp",
+            avatar: "https://randomuser.me/api/portraits/men/54.jpg",
         },
     ];
-
     return (
         <section className="py-16 bg-white overflow-hidden">
             <ContentWidth>
