@@ -26,7 +26,7 @@ export const NewArrivals = () => {
                     <p className="text-muted-foreground text-sm">Descubre las últimas tendencias en cortinas y persianas que acaban de llegar a nuestra tienda. Innovación, diseño y funcionalidad.</p>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
                     {items.map((item, index) => {
                         const finalPrice = item.discount > 0 ? calculatePrice(item.price, item.discount) : item.price;
 
